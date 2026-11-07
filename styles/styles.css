@@ -2,6 +2,29 @@ main {
     max-width: 840px;
 }
 
+nav a {
+    color: #eee;
+    padding: 10px;
+    display: block;
+    background-color: rgba(87, 133, 234, 0.785);
+}
+
+h1 {
+    color: steelblue;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+
+p {
+    padding: 0;
+}
+
 aside {
     width: 20rem;
     margin: 1rem;
@@ -15,11 +38,6 @@ aside {
 
 aside img {
     width: 200px;
-    height: auto;
-}
-
-main img {
-    width: 150px;
     height: auto;
 }
 
