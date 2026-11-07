@@ -2,11 +2,15 @@ main {
     max-width: 840px;
 }
 
+nav {
+    background-color: rgba(87, 133, 234, 0.785);
+    padding: 0;
+}
+
 nav a {
     color: #eee;
     padding: 10px;
     display: block;
-    background-color: rgba(87, 133, 234, 0.785);
 }
 
 h1 {
