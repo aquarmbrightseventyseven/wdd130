@@ -1,0 +1,1 @@
+Exciting Expeditions - WWR image assets\nPlace these files inside your wwr/images/ folder.\nHTML references: logo.jpg, rafting-hero.jpg, happy-client.jpg, facebook.svg, linkedin.svg, instagram.svg.\nAll raster image files were optimized to stay at or below 125 kB.\n

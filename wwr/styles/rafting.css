@@ -1,0 +1,211 @@
+/* Exciting Expeditions - Rafting Site Stylesheet */
+
+:root {
+    --primary-color: #1b3768;
+    --secondary-color: #e8f3f8;
+    --accent1-color: #17345f;
+    --accent2-color: #f4a340;
+    --text-color: #263238;
+    --heading-font: Georgia, "Times New Roman", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+p {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Header and navigation */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 16px;
+    background-color: var(--secondary-color);
+    border-bottom: 4px solid var(--primary-color);
+}
+
+header > img {
+    width: 120px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    list-style: none;
+}
+
+nav a {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #a64b00;
+    text-decoration: underline;
+}
+
+/* Hero image and overlays */
+.hero {
+    position: relative;
+    margin-top: 16px;
+    min-height: 300px;
+}
+
+.hero > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    padding: 14px;
+    text-align: center;
+    color: #ffffff;
+    background-color: var(--accent1-color);
+    opacity: 0.9;
+}
+
+.hero article {
+    position: absolute;
+    left: 3%;
+    right: 3%;
+    bottom: 24px;
+    padding: 12px;
+    color: #ffffff;
+    background-color: rgba(23, 52, 95, 0.88);
+    overflow: auto;
+}
+
+.hero article p {
+    margin: 0;
+    padding: 8px;
+    color: #ffffff;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    max-width: 30%;
+    height: auto;
+    margin: 4px 8px 8px 16px;
+    border: 2px solid #ffffff;
+}
+
+/* History and adventure sections */
+section {
+    margin: 24px 0;
+    padding: 16px;
+    background-color: var(--secondary-color);
+}
+
+section h2 {
+    margin-bottom: 12px;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    background-color: var(--primary-color);
+}
+
+section p {
+    margin: 8px 0;
+    padding: 8px;
+}
+
+section:last-of-type {
+    min-height: 90px;
+}
+
+/* Footer and social media links */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px;
+    border-top: 1px solid #cbd5df;
+}
+
+footer p {
+    margin: 0;
+    padding: 8px 0;
+}
+
+.socialmedia {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+/* Small-screen adjustments */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    .hero article {
+        position: static;
+        margin-top: 0;
+    }
+
+    .hero h1 {
+        top: 12px;
+        font-size: 1.25rem;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
