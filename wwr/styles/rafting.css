@@ -83,7 +83,7 @@ header nav a {
 
 header nav a:hover,
 header nav a:focus {
-    color: #ffffff;
+    color: var(--accent2-color);
     background-color: var(--primary-color);
 }
 
